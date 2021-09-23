@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/styles/index.css">
+  <link rel="stylesheet" href="./assets/styles/slider.css">
+  <link rel="stylesheet" href="./assets/styles/feedback.css">
+  <link rel="stylesheet" href="./assets/styles/css-reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <img src="./assets//images/Group 1.svg" alt="" class="header__logo">
+          <div class="header__btnGroup">
+            <button class="header__btn" onClick="document.getElementById('aboutme').scrollIntoView();">Jane Doe</button>
+            <button class="header__btn" onClick="document.getElementById('feedback').scrollIntoView();">Tell us about
+              yourself</button>
+            <button class="header__btn" onClick="document.getElementById('slider').scrollIntoView();">Slider</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="aboutme" class="aboutMe">
+      <div class="aboutMe__wrapper">
+        <div class="container">
+          <div class="aboutMe__inner">
+            <div class="aboutMe__img__wrapper">
+              <img src="./assets/images/Rectangle 1.jpg" alt="" class="aboutMe__img">
+              <span class="aboutMe__bgImg"></span>
+            </div>
+            <div class="aboutMe__info">
+              <h1 class="aboutMe__info__title">Jane Doe</h1>
+              <div class="aboutMe__info__data">
+                <div class="aboutMe__info__data__wrapper">
+                  <p class="aboutMe__info__data__title">Date of birth</p>
+                  <p class="aboutMe__info__data__text">21.04.2001</p>
+                </div>
+                <div class="aboutMe__info__data__wrapper">
+                  <p class="aboutMe__info__data__title">Gender</p>
+                  <p class="aboutMe__info__data__text">Female</p>
+                </div>
+                <div class="aboutMe__info__data__wrapper">
+                  <p class="aboutMe__info__data__title">Country</p>
+                  <p class="aboutMe__info__data__text">Corea</p>
+                </div>
+              </div>
+              <h3 class="aboutMe__info__subtitle">About me</h3>
+              <p class="aboutMe__info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br>
+                <br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="feedback" class="feedback">
+      <div class="container">
+        <div class="feedback__inner">
+          <div class="feedback__wrapper">
+            <form action="#" class="feedback__form">
+              <span class="feedback__background2"></span>
+              <span class="feedback__background1"></span>
+              <h2 class="feedback__form__title">Tell us about yourself</h2>
+              <div class="feedback__form__wrapper">
+                <label for="name" class="feedback__form__label">Your name</label>
+                <input placeholder="Tell us your name" type="text" class="feedback__form__input" name="name" id="name"
+                  required>
+              </div>
+              <div class="feedback__form__wrapper">
+                <label for="gender" class="feedback__form__label">Your gender</label>
+                <select name="gender" id="gender" class="feedback__form__input" required>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <br>
+              <div class="feedback__form__wrapper">
+                <label for="country" class="feedback__form__label">Your country</label>
+                <input placeholder="Where are you from?" type="text" class="feedback__form__input" name="country" id="country" required>
+              </div>
+              <div class="feedback__form__wrapper">
+                <label for="city" class="feedback__form__label">Your City</label>
+                <input placeholder="Which city are you from?" type="text" class="feedback__form__input" name="city" id="city" required>
+              </div>
+              <div class="feedback__form__wrapper">
+                <label for="date" class="feedback__form__label">Your date of birth</label>
+                <input type="date" class="feedback__form__input" name="date" id="date" required>
+              </div>
+
+              <div class="upload-file__wrapper">
+                <input type="file" name="files[]" id="upload-file__input_1" class="upload-file__input" multiple
+                  required>
+                <p class="upload-file__text">Proof your identity with some documents</p>
+                <label class="upload-file__label upload-file__button" for="upload-file__input_1">
+                  Add document
+                </label>
+              </div>
+
+              <button type="submit" class="feedback__form__button">Send info</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="slider" class="slider">
+      <span class="slider__arrow prev"></span>
+      <span class="slider__arrow next"></span>
+      <span onclick="changeSlide(0)" class="slider__dot dot1 dot__active"></span>
+      <span onclick="changeSlide(1)" class="slider__dot dot2"></span>
+      <span onclick="changeSlide(2)" class="slider__dot dot3"></span>
+
+
+      <div class="slider__container">
+        <div class="slider__inner">
+          <div class="slider__slide-wrapper">
+            <div class="slider__img sliderimg1"></div>
+            <h1 class="slider__title">Slide this photo</h1>
+            <p class="slider__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur</p>
+          </div>
+          <div class="slider__slide-wrapper">
+            <div class="slider__img sliderimg2"></div>
+            <h1 class="slider__title">Slide this photo</h1>
+            <p class="slider__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur</p>
+          </div>
+          <div class="slider__slide-wrapper">
+            <div class="slider__img sliderimg3"></div>
+            <h1 class="slider__title">Slide this photo</h1>
+            <p class="slider__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur</p>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/slider.js"></script>
+</body>
+
+</html>

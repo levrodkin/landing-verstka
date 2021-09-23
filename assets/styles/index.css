@@ -1,0 +1,190 @@
+.header {
+  background-color: #F8F3FF;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 14px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+}
+
+.header__logo {
+  width: 116px;
+  height: 44px;
+}
+
+.header__btn {
+  margin-left: 32px;
+  color: #8E43ED;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  border: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.aboutMe {
+  background-color: #F8F3FF;
+}
+
+.aboutMe__wrapper {
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  background-color: #fff;
+}
+
+.aboutMe__inner {
+  display: flex;
+  padding: 100px 0;
+  position: relative;
+}
+
+.aboutMe__img__wrapper {
+  position: relative;
+  max-width: 528px;
+}
+
+.aboutMe__img {
+  border-radius: 5%;
+  width: 528px;
+}
+
+.aboutMe__bgImg {
+  position: absolute;
+  z-index: 5;
+  background-image: url(../images/Rectangles3.svg);
+  right: 420px;
+  bottom: -35px;
+  width: 170px;
+  height: 250px;
+  background-repeat: no-repeat;
+}
+
+.aboutMe__info {
+  margin-left: 32px;
+}
+
+.aboutMe__info__title {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 72px;
+  color: #303030;
+}
+
+.aboutMe__info__data {
+  margin: 24px 0 64px;
+  display: flex;
+}
+
+.aboutMe__info__data__wrapper {
+  display: flex;
+  margin-right: 32px;
+}
+
+.aboutMe__info__data__title {
+  font-weight: 700;
+  color: #AA7ECD;
+  margin-right: 8px;
+  line-height: 21px;
+}
+
+.aboutMe__info__data__text {
+  line-height: 21px;
+  font-weight: 500;
+  color: #303030;
+}
+
+.aboutMe__info__subtitle {
+  font-size: 27px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #303030;
+}
+
+.aboutMe__info__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+@media (max-width: 1050px) {
+  .aboutMe__inner {
+    display: block
+  }
+  .aboutMe__wrapper {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .aboutMe__inner {
+    padding: 24px 0 58px 0;
+  }
+  .aboutMe__bgImg {
+    background-image: url(../images/Rectangles\ 4.svg);
+    width: 80px;
+    height: 117px;
+    background-repeat: no-repeat;
+    right: -5px;
+    bottom: -25px;
+  }
+  .aboutMe__info {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 570px) {
+  .aboutMe__inner {
+    display: block
+  }
+  .aboutMe__info__data__wrapper {
+    display: inline-block;
+    margin-right: 39px;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__logo {
+    width: 78px;
+    height: 30px;
+  }
+  .header__inner {
+    justify-content: center;
+    height: 64px;
+  }
+  .aboutMe__img {
+    border-radius: 5%;
+    width: 100%;
+  }
+  .aboutMe__info__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .aboutMe__info__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .aboutMe__info__data {
+    margin: 16px 0 32px;
+  }
+  .aboutMe__info__data__title {
+    line-height: 18px;
+    font-size: 14px;
+  }
+  .aboutMe__info__text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .aboutMe__info__data__text {
+    line-height: 18px;
+    font-size: 14px;
+  }
+}
